@@ -6,9 +6,12 @@ import { FormInput, FormButton } from "../formFields";
 import TextLink from "../textLink";
 
 class SignupForm extends Component {
-  render() {
-    return (
-      <form className="sign-up-form">
+    render() {
+
+        const { handleSubmit } = this.props;
+
+        return (
+      <form onSubmit={handleSubmit} className="sign-up-form">
         <FormTitle className="sign-up-form__title" text="New User" />
         <Field
           className="sign-up-form__fullname"
@@ -20,7 +23,7 @@ class SignupForm extends Component {
         />
         <Field
           className="sign-up-form__unit"
-          placeholder="Enter unit #"
+          placeholder="Enter Unit #"
           name="unit"
           type="text"
           title="Unit #"
