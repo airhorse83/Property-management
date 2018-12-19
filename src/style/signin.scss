@@ -23,3 +23,10 @@
         margin-top: 5.2rem;
     }
 }
+
+.sign-in-form {
+    &__email, 
+    &__password {
+        transform: translateX(-64.5px);
+    }
+}
