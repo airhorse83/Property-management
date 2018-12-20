@@ -12,7 +12,6 @@ class Signin extends Component {
       
     this.props.signIn(fields, () => {
         this.props.history.push('/dashboard');
-        console.log('hi')
     })
   }
 
